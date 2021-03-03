@@ -1,6 +1,7 @@
 To update:
 - fetch MLS data from https://location.services.mozilla.com/downloads and extract the package
 - delete the data directories to make sure there will be no leftover
-- execute "./updateData.sh <the_data_file>
+- make sure geoclue-provider-mlsdb-tool is installed
+- execute "./updateData.sh <the_data_file>"
 - add the data directories to git commit
 
