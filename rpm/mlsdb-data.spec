@@ -5,7 +5,7 @@ Summary: Geoinformation data from Mozilla Location Services Geoclue provider
 URL: https://github.com/sailfishos/mlsdb-data/
 License: Public Domain
 Source0: %{name}-%{version}.tar.gz
-BuildRequires:  qt5-qttools-linguist
+BuildRequires: qt5-tools
 %description
 %{summary}.
 
