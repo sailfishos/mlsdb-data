@@ -6,6 +6,8 @@ URL: https://github.com/sailfishos/mlsdb-data/
 License: Public Domain
 Source0: %{name}-%{version}.tar.gz
 BuildRequires: qt5-tools
+BuildRequires: qt5-qttools-linguist
+
 %description
 %{summary}.
 
