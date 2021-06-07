@@ -29,14 +29,14 @@ Item {
         //% "Mozilla Location Services offline positioning data for Southern Europe speeds up getting position lock for your device in the region."
         QT_TRID_NOOP("mlsdb-data-la-store_southern_europe_summary")
 
-        //% "Southern Europe package contains positioning data for Albania, Andorra, Bosnia and Herzegovina, Croatia, Greece, Italy, Macedonia, Malta, Montenegro, Portugal, San Marino, Serbia, Slovenia and Spain, but not including Holy See (Vatican).\n"
+        //% "Southern Europe package contains positioning data for Albania, Andorra, Bosnia and Herzegovina, Croatia, Greece, Italy, Macedonia, Malta, Montenegro, Portugal, San Marino, Serbia, Slovenia and Spain, but not including the Holy See (Vatican).\n"
         //% "\n"
         //% "Positioning using the data does not require network access. Positioning data contains mobile phone tower information for the region. The data is based on open Mozilla Location Service cell network information published under public domain in https://location.services.mozilla.com"
         QT_TRID_NOOP("mlsdb-data-la-store_southern_europe_description")
 
         // Eastern Europe
 
-        //% "Mozilla Location Services offline positioning data for Southern Europe speeds up getting position lock for your device in the region."
+        //% "Mozilla Location Services offline positioning data for Eastern Europe speeds up getting position lock for your device in the region."
         QT_TRID_NOOP("mlsdb-data-la-store_eastern_europe_summary")
 
         //% "Eastern Europe package contains positioning data for Belarus, Bulgaria, Czech Republic, Hungary, Moldova, Poland, Romania, Slovakia and Ukraine.\n"
