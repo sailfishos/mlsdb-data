@@ -1,5 +1,5 @@
 Name: mlsdb-data
-Version: 0.1
+Version: 0.2
 Release: 1
 Summary: Geoinformation data from Mozilla Location Services Geoclue provider
 URL: https://github.com/sailfishos/mlsdb-data/
@@ -53,39 +53,79 @@ Moldova, Poland, Romania, Slovakia and Ukraine.
 lupdate . -ts mlsdb-data.ts
 
 %install
-mkdir -p %{buildroot}%{_datadir}/geoclue-provider-mlsdb/
-cp -r  Australia %{buildroot}%{_datadir}/geoclue-provider-mlsdb/
-cp -r India %{buildroot}%{_datadir}/geoclue-provider-mlsdb
-cp -r Northern_Europe %{buildroot}%{_datadir}/geoclue-provider-mlsdb
-cp -r Western_Europe %{buildroot}%{_datadir}/geoclue-provider-mlsdb
-cp -r Southern_Europe %{buildroot}%{_datadir}/geoclue-provider-mlsdb
-cp -r Eastern_Europe %{buildroot}%{_datadir}/geoclue-provider-mlsdb
+mkdir -p %{buildroot}%{_datadir}/geoclue-provider-mlsdb/data
+cp Australia/* %{buildroot}%{_datadir}/geoclue-provider-mlsdb/data
+cp India/* %{buildroot}%{_datadir}/geoclue-provider-mlsdb/data
+cp Northern_Europe/* %{buildroot}%{_datadir}/geoclue-provider-mlsdb/data
+cp Western_Europe/* %{buildroot}%{_datadir}/geoclue-provider-mlsdb/data
+cp Southern_Europe/* %{buildroot}%{_datadir}/geoclue-provider-mlsdb/data
+cp Eastern_Europe/* %{buildroot}%{_datadir}/geoclue-provider-mlsdb/data
 mkdir -p %{buildroot}%{_datadir}/translations/source
 cp mlsdb-data.ts %{buildroot}%{_datadir}/translations/source
 
 %files australia
 %defattr(-,root,root,-)
-%{_datadir}/geoclue-provider-mlsdb/Australia
+%{_datadir}/geoclue-provider-mlsdb/data/505.dat
 
 %files india
 %defattr(-,root,root,-)
-%{_datadir}/geoclue-provider-mlsdb/India
+%{_datadir}/geoclue-provider-mlsdb/data/404.dat
+%{_datadir}/geoclue-provider-mlsdb/data/405.dat
 
 %files northern-europe
 %defattr(-,root,root,-)
-%{_datadir}/geoclue-provider-mlsdb/Northern_Europe
+%{_datadir}/geoclue-provider-mlsdb/data/234.dat
+%{_datadir}/geoclue-provider-mlsdb/data/235.dat
+%{_datadir}/geoclue-provider-mlsdb/data/238.dat
+%{_datadir}/geoclue-provider-mlsdb/data/240.dat
+%{_datadir}/geoclue-provider-mlsdb/data/242.dat
+%{_datadir}/geoclue-provider-mlsdb/data/244.dat
+%{_datadir}/geoclue-provider-mlsdb/data/246.dat
+%{_datadir}/geoclue-provider-mlsdb/data/247.dat
+%{_datadir}/geoclue-provider-mlsdb/data/248.dat
+%{_datadir}/geoclue-provider-mlsdb/data/272.dat
+%{_datadir}/geoclue-provider-mlsdb/data/274.dat
 
 %files western-europe
 %defattr(-,root,root,-)
-%{_datadir}/geoclue-provider-mlsdb/Western_Europe
+%{_datadir}/geoclue-provider-mlsdb/data/204.dat
+%{_datadir}/geoclue-provider-mlsdb/data/206.dat
+%{_datadir}/geoclue-provider-mlsdb/data/208.dat
+%{_datadir}/geoclue-provider-mlsdb/data/212.dat
+%{_datadir}/geoclue-provider-mlsdb/data/228.dat
+%{_datadir}/geoclue-provider-mlsdb/data/232.dat
+%{_datadir}/geoclue-provider-mlsdb/data/262.dat
+%{_datadir}/geoclue-provider-mlsdb/data/270.dat
+%{_datadir}/geoclue-provider-mlsdb/data/295.dat
 
 %files southern-europe
 %defattr(-,root,root,-)
-%{_datadir}/geoclue-provider-mlsdb/Southern_Europe
+%{_datadir}/geoclue-provider-mlsdb/data/202.dat
+%{_datadir}/geoclue-provider-mlsdb/data/213.dat
+%{_datadir}/geoclue-provider-mlsdb/data/214.dat
+%{_datadir}/geoclue-provider-mlsdb/data/218.dat
+%{_datadir}/geoclue-provider-mlsdb/data/219.dat
+%{_datadir}/geoclue-provider-mlsdb/data/220.dat
+%{_datadir}/geoclue-provider-mlsdb/data/222.dat
+%{_datadir}/geoclue-provider-mlsdb/data/268.dat
+%{_datadir}/geoclue-provider-mlsdb/data/276.dat
+%{_datadir}/geoclue-provider-mlsdb/data/278.dat
+%{_datadir}/geoclue-provider-mlsdb/data/292.dat
+%{_datadir}/geoclue-provider-mlsdb/data/293.dat
+%{_datadir}/geoclue-provider-mlsdb/data/294.dat
+%{_datadir}/geoclue-provider-mlsdb/data/297.dat
 
 %files eastern-europe
 %defattr(-,root,root,-)
-%{_datadir}/geoclue-provider-mlsdb/Eastern_Europe
+%{_datadir}/geoclue-provider-mlsdb/data/216.dat
+%{_datadir}/geoclue-provider-mlsdb/data/226.dat
+%{_datadir}/geoclue-provider-mlsdb/data/230.dat
+%{_datadir}/geoclue-provider-mlsdb/data/231.dat
+%{_datadir}/geoclue-provider-mlsdb/data/255.dat
+%{_datadir}/geoclue-provider-mlsdb/data/257.dat
+%{_datadir}/geoclue-provider-mlsdb/data/259.dat
+%{_datadir}/geoclue-provider-mlsdb/data/260.dat
+%{_datadir}/geoclue-provider-mlsdb/data/284.dat
 
 %package ts-devel
 Summary: Translations for MLS location data package descriptions in Store.
